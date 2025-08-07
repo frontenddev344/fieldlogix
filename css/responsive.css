@@ -223,7 +223,11 @@ margin-bottom: 40px;
 }
 .para {
 
-    font-size: 15px;
+font-size: 15px;
+}
+.video-modal .modal-dialog .modal-header {
+top: -44px;
+right: 0;
 }
 }
 
@@ -300,6 +304,9 @@ margin: 48px 0;
 .site-footer {
 margin-top: 48px;
 padding: 20px 0;
+}
+.video-modal iframe {
+    height: 300px;
 }
 }
 
