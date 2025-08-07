@@ -308,6 +308,13 @@ padding: 20px 0;
 .video-modal iframe {
     height: 300px;
 }
+#navbar .li-none li a, .li-none li p {
+    font-size: 14px;
+}
+#navbar ul li a {
+font-size: 14px;
+height: 30px;
+}
 }
 
 

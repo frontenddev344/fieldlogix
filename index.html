@@ -10,6 +10,7 @@
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
       <link rel="stylesheet" href="css/style.css">
       <link rel="stylesheet" href="css/responsive.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       <title>Document</title>
    </head>
    <body>
@@ -161,10 +162,10 @@
                         </div>
                         <div class="li-none">
                            <ul>
-                              <li class="menu-item-has-children">
+                              <li>
                                  <a href="" target="_blank">
                                  <img
-                                    src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2020%2020'%3E%3C/svg%3E"
+                                    src="img/login-person.svg"
                                     alt="user">
                                  Login
                                  </a>
@@ -172,7 +173,7 @@
                               <li>
                                  <a href="tel:888-803-0200" target="_blank">
                                  <img width="20" height="20"
-                                    src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2020%2020'%3E%3C/svg%3E"
+                                    src="img/volume.svg"
                                     alt="phone">
                                  888-803-0200
                                  </a>
@@ -199,7 +200,7 @@
       </section>
       <main>
          <!-- banner -->
-         <section class="banner">
+        <section class="banner" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
             <div class="banner-shapes">
                <img src="img/hero-shape.png" alt="">
             </div>
@@ -236,7 +237,7 @@
          </section>
          <!-- banner end -->
          <!-- serving-slider -->
-         <section class="serving-slider">
+        <section class="serving-slider" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
             <div class="container">
                <div class="row">
                   <div class="col-sm-12">
@@ -288,7 +289,7 @@
          </section>
          <!-- serving-slider end -->
          <!-- enterprise -->
-         <section class="enterprise">
+        <section class="enterprise" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
             <div class="container">
                <div class="row">
                   <div class="col-sm-12">
@@ -316,7 +317,7 @@
          </section>
          <!-- enterprise  end -->
          <!-- testimonials start -->
-         <section class="testimonials">
+        <section class="testimonials" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
             <div class="container">
                <div class="row">
                   <div class="com-md-12">
@@ -459,7 +460,7 @@
             </div>
          </section>
          <!-- serving-slider end -->
-         <section class="compaire">
+        <section class="compaire" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
             <div class="compaire-layer">
                <img src="img/Maskgroup.png" alt="">
             </div>
@@ -523,7 +524,7 @@
             </div>
          </section>
          <!-- Take the tour -->
-         <section class="take">
+        <section class="take" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
             <div class="container">
                <div class="row">
                   <div class="col-sm-12">
@@ -661,6 +662,8 @@
       <script src="js/bootstrap.bundle.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
       <script src="js/custom.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
       <script>
          var swiper = new Swiper(".slider-testimonials", {
             direction: 'horizontal',
@@ -720,5 +723,10 @@
          });
          
       </script>
+      <script>
+  AOS.init({
+    once: true // only animate once when scrolling down
+  });
+</script>
    </body>
 </html>
