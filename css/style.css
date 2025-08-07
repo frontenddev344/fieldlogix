@@ -486,6 +486,7 @@ line-height: 110%;
 font-size: 34px;
 font-weight: 600;
 margin-bottom: 34px;
+line-height: normal;
 }
 .serving-img:hover img {
 transform: scale(0.9);
