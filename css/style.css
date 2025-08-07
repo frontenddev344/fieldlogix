@@ -888,3 +888,27 @@ transition: all .3s ease-in-out;
 .social:hover img {
 filter: brightness(0) saturate(100%) invert(45%) sepia(85%) saturate(1070%) hue-rotate(71deg) brightness(100%) contrast(103%);
 }
+
+.footer-links {
+display: flex;
+justify-content: space-between;
+width: 60%;
+}
+
+.footer-links h4 {
+color: #fff;
+font-size: 24px;
+font-weight: 700;
+margin-bottom: 24px;
+display: flex;
+align-items: center;
+gap: 20px;
+}
+
+.footer-links a {
+color: #e6e6e7;
+font-size: 16px;
+font-weight: 400;
+line-height: 180%;
+opacity: .7;
+}
