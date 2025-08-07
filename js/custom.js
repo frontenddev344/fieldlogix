@@ -128,33 +128,33 @@ $('.banner-buttons a, .head-button a, .plan-head a, .banner-buttons-sol a').remo
 
 
     });
-
-
-
-    // type js plugin
-let typeJsText = document.querySelector(".typeJsText");
-let textArray = typeJsText.dataset.typetext.split("");
-let counter = -1;
-
-typeJsText.innerHTML = "";
-
-function typeJs() {
-  if (counter < typeJsText.dataset.typetext.length) {
-    counter++;
-    typeJsText.innerHTML += typeJsText.dataset.typetext.charAt(counter);
-    textArray = typeJsText.dataset.typetext.split("");
-  } else {
-    textArray.pop();
-    typeJsText.innerHTML = textArray.join("");
-    if (textArray.length == 0) {
-      counter = -1;
-    }
-  }
+	
+if(jQuery(window).width() < 1280) {
+jQuery('.menu-item-has-children').addClass('mbl-dropdown');
+jQuery('.menu-item-has-children>a').append('<span class="dropdown-container"><img src="https://fieldlogix.com/wp-content/uploads/2024/03/mbl-dropdown-header.svg"></span>');
 }
 
-setInterval(() => {
-  typeJs();
-}, 100);
+jQuery('.dropdown-container').click(function () {
+var subMenu = jQuery(this).parent().siblings('.sub-menu');
+
+// Toggle 'active' class on the clicked dropdown-container
+jQuery(this).toggleClass('active');
+
+// Remove 'active' class from other dropdown-container elements
+jQuery('.dropdown-container').not(this).removeClass('active');
+
+// Check if sub-menu is visible
+if (subMenu.is(':visible')) {
+// If visible, slide up
+subMenu.slideUp();
+} else {
+// If not visible, slide up all sub-menus and then slide down this one
+jQuery('.sub-menu').slideUp();
+subMenu.slideDown();
+}
+});
+
+
 
 
 
@@ -171,10 +171,10 @@ var swiper = new Swiper(".slider-serving", {
     },
     breakpoints: {
       320: {
-        slidesPerView: 3,
+        slidesPerView: 2,
       },
       480: {
-        slidesPerView: 3,
+        slidesPerView: 2,
         spaceBetween: 10,
       },
       768: {
