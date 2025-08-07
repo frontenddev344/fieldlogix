@@ -162,40 +162,30 @@ setInterval(() => {
 
 var swiper = new Swiper(".slider-serving", {
   direction: 'horizontal',
-  slidesPerView: 6,
-  spaceBetween: 21,
-  loop: true,
-  autoplay: {
-      delay: 3000, 
-     disableOnInteraction: false 
+    slidesPerView: 6,
+    spaceBetween: 21,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+         disableOnInteraction: false 
     },
-  scrollbar: {
-     el: ".swiper-scrollbar",
-     hide: false,
-     draggable: true,
-  },
-  breakpoints: {
-     // when window width is >= 320px
-     320: {
-      slidesPerView: 3,
-     },
-     // when window width is >= 480px
-     480: {
+    breakpoints: {
+      320: {
+        slidesPerView: 3,
+      },
+      480: {
         slidesPerView: 3,
         spaceBetween: 10,
-     },
-     // when window width is >= 768px
-     768: {
-      slidesPerView: 4,
+      },
+      768: {
+        slidesPerView: 4,
         spaceBetween: 14,
-     },
-     // when window width is >= 1024px
-     1024: {
+      },
+      1024: {
         slidesPerView: 5,
-     }
-  }
-});
-
+      }
+    }
+  });
 
 
 
