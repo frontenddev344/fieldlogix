@@ -902,6 +902,7 @@ filter: brightness(0) saturate(100%) invert(45%) sepia(85%) saturate(1070%) hue-
 display: flex;
 justify-content: space-between;
 width: 60%;
+gap:10px;
 }
 
 .site-footer .footer-links h4 {
