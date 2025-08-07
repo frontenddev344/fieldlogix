@@ -140,7 +140,10 @@ margin: 0 auto;
 }
 
 section{
-  overflow: hidden;
+  overflow: hidden!important;
+}
+main {
+    overflow: hidden;
 }
 
 /* header */
