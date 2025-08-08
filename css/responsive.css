@@ -192,6 +192,9 @@ font-size: 15px;
 .site-footer .logo-links {
 gap: 63px;
 }
+.enterprise .primary-btn {
+margin: 45px auto 0;
+}
 }
 
 
