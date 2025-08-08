@@ -231,7 +231,7 @@ var swiper = new Swiper(".slider-serving", {
 document.getElementById("take-btn").addEventListener("click", function(e) {
   e.preventDefault();
   const section = document.querySelector("#take");
-  const offset = 80; // upar ka gap in px
+  const offset = 180; // upar ka gap in px
   const top = section.getBoundingClientRect().top + window.scrollY - offset;
 
   window.scrollTo({
