@@ -164,6 +164,9 @@ text-transform: uppercase;
 #navbar .li-none li a span.dropdown-container, .li-none li p span.dropdown-container {
 display:none;
 }
+#navbar ul.sub-menu li a {
+    font-size: 16px;
+}
 }
 
 
@@ -319,7 +322,18 @@ padding: 20px 0;
 }
 #navbar ul li a {
 font-size: 14px;
-height: 30px;
+}
+.mobile-logo {
+padding: 0 0 0 15px;
+margin: -10px 0 5px;
+display: block;
+}
+.get-started #navbar {
+max-width: 100%;
+padding-top: 30px!important;
+}
+.top-header {
+    display: none;
 }
 }
 

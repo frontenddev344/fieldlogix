@@ -347,8 +347,16 @@ outline: 0;
 }
 
 .dropdown-container img {
-    filter: brightness(0) invert(1);
+filter: brightness(0) invert(1);
 }
+#navbar ul li:first-child .dropdown-container {
+display: none;
+}
+#navbar ul li:last-child .dropdown-container {
+display: none;
+}
+
+
 
 /* banner */
 .banner {
