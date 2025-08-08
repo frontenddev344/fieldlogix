@@ -1047,3 +1047,7 @@ margin: 0;
   color: #53a42a;
   border: 1px solid #53a42a;
 }
+
+#take {
+  scroll-margin-top: 180px; /* upar se kitna gap chahiye */
+}
