@@ -372,9 +372,7 @@ animation: slideDown 0.35s ease-out;
 background:#fff;
 }
 
-.header-site.is-sticky img {
-max-width: 80%;
-}
+
 
 .header-site.is-sticky button {
 font-size: 14px;
@@ -389,7 +387,9 @@ to {
 transform: translateY(0);
 }
 }
-
+.header-site.is-sticky .innerHeader {
+    padding-bottom: 16px;
+}
 
 
 /* banner */

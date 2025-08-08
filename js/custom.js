@@ -184,6 +184,17 @@ setInterval(() => {
   typeJs();
 }, 100);
 
+const header = document.querySelector(".header-site");
+const toggleClass = "is-sticky";
+
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+  if (currentScroll > 150) {
+    header.classList.add(toggleClass);
+  } else {
+    header.classList.remove(toggleClass);
+  }
+});
 
 
 var swiper = new Swiper(".slider-serving", {
