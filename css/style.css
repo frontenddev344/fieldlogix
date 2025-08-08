@@ -364,6 +364,34 @@ list-style: disc;
 color: #53a42a;
 }
 
+.header-site.is-sticky {
+position: fixed;
+box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10px);
+animation: slideDown 0.35s ease-out;
+background:#fff;
+}
+
+.header-site.is-sticky img {
+max-width: 80%;
+}
+
+.header-site.is-sticky button {
+font-size: 14px;
+padding: 7px 10px;
+}
+
+@keyframes slideDown {
+from {
+transform: translateY(-100%);
+}
+to {
+transform: translateY(0);
+}
+}
+
+
+
 /* banner */
 .banner {
 background: var(--background);
