@@ -155,7 +155,9 @@ subMenu.slideDown();
 });
 
 
-
+document.querySelector('.search-toggle').addEventListener('click', function() {
+  document.documentElement.classList.toggle('search-active');
+});
 
     // type js plugin
 let typeJsText = document.querySelector(".typeJsText");

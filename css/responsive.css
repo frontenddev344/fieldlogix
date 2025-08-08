@@ -29,7 +29,7 @@ transition: all .5s;
 
 @media screen and (max-width: 1279px) {
 .hamburger {
-display: block;
+display: flex;
 position: relative;
 z-index: 999;
 }

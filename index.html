@@ -156,7 +156,7 @@
                                        href="">Case Studies</a></li>
                                  </ul>
                               </li>
-                              <li ><a
+                              <li class=" menu-item-has-children"><a
                                  href="">Contact Us</a></li>
                            </ul>
                         </div>
@@ -182,8 +182,8 @@
                         </div>
                      </nav>
                      <div class="head-button">
-                        <img width="20" height="21"
-                           src="img/search.svg" alt="search">
+                        <img 
+                           src="img/search.svg" alt="search" class="search-toggle">
                         <a href="#" class="navbtn">See it now</a>
                      </div>
                      <div class="hamburger">
@@ -658,6 +658,16 @@
             </div>
          </div>
       </div>
+      <div class="popup-overlay search-box">
+         <div class="popup-container">
+        <form role="search" id="searchheader">
+            <input type="text" value="" name="s" id="searchheaderinput" placeholder="Search here">
+			<button type="submit">
+				<img  src="https://fieldlogix.com/wp-content/themes/field-logix/images/search-popup.svg">
+			</button>
+        </form>
+    </div>
+</div>
       <script src="js/jquery.min.js"></script>
       <script src="js/bootstrap.bundle.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
