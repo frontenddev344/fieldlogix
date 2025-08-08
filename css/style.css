@@ -355,8 +355,14 @@ display: none;
 #navbar ul li:last-child .dropdown-container {
 display: none;
 }
-
-
+.search-active .search-box .popup-container {
+width: calc(100% - 40px);
+margin: 0 auto;
+}
+#navbar ul li:hover {
+list-style: disc;
+color: #53a42a;
+}
 
 /* banner */
 .banner {

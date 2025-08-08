@@ -333,7 +333,17 @@ max-width: 100%;
 padding-top: 30px!important;
 }
 .top-header {
-    display: none;
+display: none;
+}
+.footer-logos .main-logo img {
+width: 176px;
+}
+
+.footer-logos .main-logo {
+margin: 0 auto;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 }
 
@@ -383,5 +393,12 @@ font-size: 14px;
 }
 .site-footer .footer-links a {
 font-size: 15px;
+}
+}
+
+
+@media screen and (max-width: 480px) {
+.site-footer .news-input button.primary-btn {
+width: 98px;
 }
 }
