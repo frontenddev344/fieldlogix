@@ -653,6 +653,7 @@ width: 100%;
 color: #323232;
 font-style: italic;
 position: relative;
+cursor: pointer;
 }
 .all-users {
 display: flex;
@@ -698,7 +699,7 @@ z-index: 1;
 content: "";
 display: block;
 position: absolute;
-right: -13px;
+right: 25px;
 top: 0;
 width: 1px;
 height: 100%;
@@ -715,10 +716,10 @@ margin-top: 60px;
 margin-bottom: 60px;
 }
 
-.user-name:last-child::before {
+.testimonials .swiper-thumbs .swiper-wrapper .swiper-slide:last-child .user-name::before {
 display: none;
 }
-.user-name:last-child::after {
+.testimonials .swiper-thumbs .swiper-wrapper .swiper-slide:last-child .user-name::after {
 display: none;
 }
 .slider-testimonials-bg {
@@ -1066,3 +1067,45 @@ scroll-margin-top: 180px; /* upar se kitna gap chahiye */
     top: 0;
     transform: translateX(-50%);
 }
+
+.testimonials .swiper-thumbs{
+    width: 100%;
+    max-width: 900px;
+}
+.testimonials .swiper-thumbs .swiper-wrapper {
+    justify-content: center;
+    width: 100%;
+}
+
+
+/* .testimonials .swiper-thumbs .swiper-slide:before {
+    display: block;
+    content: "";
+    height: 0;
+    width: 0;
+    border-image: none;
+    position: absolute;
+    right: -13px;
+    top: 0;
+    border-top: 0px solid #f1f1f1;
+    border-left: 17px solid #f1f1f1;
+    border-bottom: 63px solid transparent;
+    z-index: 1;
+}
+
+.testimonials .swiper-thumbs .swiper-slide:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -13px;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: #dddddd;
+    transform: skew(-26deg);
+    -webkit-transform: skew(-26deg);
+    -o-transform: skew(-26deg);
+    -moz-transform: skew(-26deg);
+    -ms-transform: skew(-26deg);
+    z-index: 9;
+} */
