@@ -375,7 +375,7 @@
                        <div class="swiper-slide">
                         <div class="serving-img">
                            <div class="profiler">
-                               <img src="img/comments-2.jpg" alt="Chris Miller">
+                              <img src="img/user1.webp" alt="user">
                            </div>
                            <ul>
                                <li><img src="img/full-rating.svg" alt="star"></li>
@@ -391,7 +391,7 @@
                        <div class="swiper-slide">
                         <div class="serving-img">
                            <div class="profiler">
-                               <img src="img/comments-2.jpg" alt="Chris Miller">
+                              <img src="img/user2.webp" alt="user">
                            </div>
                            <ul>
                                <li><img src="img/full-rating.svg" alt="star"></li>
@@ -407,7 +407,7 @@
                        <div class="swiper-slide">
                         <div class="serving-img">
                            <div class="profiler">
-                               <img src="img/comments-2.jpg" alt="Chris Miller">
+                              <img src="img/user3.webp" alt="user">
                            </div>
                            <ul>
                                <li><img src="img/full-rating.svg" alt="star"></li>
@@ -423,7 +423,7 @@
                        <div class="swiper-slide">
                         <div class="serving-img">
                            <div class="profiler">
-                               <img src="img/comments-2.jpg" alt="Chris Miller">
+                              <img src="img/user1.webp" alt="user">
                            </div>
                            <ul>
                                <li><img src="img/full-rating.svg" alt="star"></li>
@@ -777,29 +777,21 @@
       </script>
 
    <script>
-    var swiper = new Swiper(".mySwiper", {
-  loop: true, // Enable looping
-  spaceBetween: 20, // Adjust space between slides (you can customize this)
-  slidesPerView: 3, // Show 3 slides at once
-  freeMode: false, // Disable free mode
-  watchSlidesProgress: true, // Watch slide progress for better smoothness
-  breakpoints: {
-    0: {
-      slidesPerView: 1, // Show 1 slide on smaller screens
-    },
-    768: {
-      slidesPerView: 3, // Show 3 slides on larger screens
-    }
-  },
-  // Enable smooth transition between slides
-  speed: 600, // Transition speed (in ms)
-  autoplay: {
-    delay: 3000, // Autoplay every 3 seconds (optional)
-    disableOnInteraction: false, // Keep autoplay even when manually swiping
-  }
-});
-
-
+      var swiper = new Swiper(".mySwiper", {
+         loop: true,
+         spaceBetween: 0,
+         slidesPerView: 3,
+         freeMode: false,
+         watchSlidesProgress: true,
+         breakpoints: {
+            0: {
+               slidesPerView: 1,
+            },
+            768: {
+               slidesPerView: 3,
+            }
+         }
+      });
       var swiper2 = new Swiper(".mySwiper2", {
       loop: true,
       spaceBetween: 10,
