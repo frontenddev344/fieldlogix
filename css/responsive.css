@@ -352,6 +352,9 @@ align-items: center;
 width: 30px;
 margin-top:-3px
 }
+.user-name {
+    justify-content: center;
+}
 }
 
 
@@ -401,6 +404,7 @@ font-size: 14px;
 .site-footer .footer-links a {
 font-size: 15px;
 }
+
 }
 
 
