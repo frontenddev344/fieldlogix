@@ -1051,3 +1051,18 @@ margin: 0;
 #take {
 scroll-margin-top: 180px; /* upar se kitna gap chahiye */
 }
+
+/* 11-aug-2025 new css  */
+.header-site, footer {
+    display: none;
+}
+
+.site-logo {
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
