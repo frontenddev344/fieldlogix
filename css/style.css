@@ -395,7 +395,7 @@ transform: translateY(0);
 /* banner */
 .banner {
 background: var(--background);
-padding: 226px 0 100px;
+padding: 226px 0 0;
 position: relative;
 }
 
@@ -1059,13 +1059,16 @@ scroll-margin-top: 180px; /* upar se kitna gap chahiye */
 }
 
 .site-logo {
-    text-align: center;
-    padding: 10px 0;
+    padding: 10px 15px;
     position: absolute;
     z-index: 1;
     left: 50%;
     top: 0;
-    transform: translateX(-50%);
+    left: 0;
+    width: 100%;
+    max-width: 1310px;
+    margin: 0 auto;
+    right: 0;
 }
 
 .testimonials .swiper-thumbs{
@@ -1109,3 +1112,9 @@ scroll-margin-top: 180px; /* upar se kitna gap chahiye */
     -ms-transform: skew(-26deg);
     z-index: 9;
 } */
+
+
+.take-tour-btn {
+    text-align: center;
+    margin-top: 20px;
+}
